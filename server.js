@@ -8,7 +8,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-      origin: 'http://localhost:3030', // Replace '*' with your frontend URL in production
+      origin: 'https://chat-frontend-tau-nine.vercel.app/', // Replace '*' with your frontend URL in production
       methods: ['GET', 'POST']
   }
 });
